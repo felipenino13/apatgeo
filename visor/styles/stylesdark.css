@@ -1,0 +1,426 @@
+html,
+body,
+#viewDiv {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/*Estaba en index*/
+
+.esri-ui-corner{
+    height: 96vh;
+    justify-content: space-between;
+    flex-direction: column-reverse !important;
+}
+
+.esri-ui {
+    z-index: 2 !important;
+}
+
+.esri-view-surface canvas{
+    z-index: -5;
+}
+
+.button-line{
+    padding: 4px;
+    border: solid 1px #0d6efd;
+    border-radius: 4px;
+    color: #0d6efd !important;
+    margin: 4px;
+    font-size: 14px;
+    display: inline-flex;
+}
+
+
+
+.button-line img{
+    vertical-align: middle;
+    padding-right: 4px;
+    width: 20px;
+}
+
+.button-select{
+    padding: 4px 16px;
+    background: #2b3035;
+    border-radius: 2px;
+    color: white !important;
+    margin: 4px;
+    box-shadow: rgba(0, 0, 0, 0.5) 1px 2px 4px;
+    border-radius: 40px;
+    
+    
+}
+
+.esri-search__form, .esri-search__input-container, .esri-search__container, .esri-widget--button, .esri-search__input{
+    background: none !important;
+}
+
+.esri-popup, .esri-popup__main-container{
+    border-radius: 8px;
+}
+
+
+.esri-popup--is-docked-top-right, .esri-popup--is-docked-bottom-right{
+    /*justify-content: flex-start;*/
+    margin-top: 100px;
+}
+
+.esri-search{
+    height: 40px;
+    border-radius: 8px;
+}
+
+
+
+/*iconos ui arcgis*/
+calcite-icon{
+    vertical-align: middle;
+    padding-right: 4px;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+@media only screen and (max-width: 430px) {
+
+    .esri-search{
+        width: 84% !important;
+    }
+    .esri-ui-corner{
+        width: 100% !important;
+    }
+
+
+}
+
+/*hasta aqui lo del index*/
+
+.logo{
+    width: 40px;
+    margin: auto;
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    bottom: 5%;
+    left: 50%;
+}
+
+hr{
+    border: solid 1px rgb(241, 241, 241);
+}
+
+.filtromunicipios{
+    position: fixed;
+    top: 70%;
+    z-index: 1;
+    left: 1%;
+    width: 240px;
+    font-size: 14px;
+    padding: 16px;
+
+}
+
+.btn-check{
+    position: absolute;
+    clip: rect(0,0,0,0);
+    pointer-events: none;
+}
+
+h2{
+    margin-block-end: 0px;
+    padding-bottom: 0;
+    margin-bottom: 0 !important;
+}
+
+.escala_UAF{
+    position: absolute;
+    z-index: 1;
+    bottom: 10%;
+    left: 20%;
+    display: flex;
+    width: 60%;
+    font-size: 11px;
+}
+
+.escala_UAF a{
+    color: white;
+}
+
+.escala_UAF p{
+    margin: 0;
+}
+
+.custom-tooltip {
+    --bs-tooltip-bg: #333;
+    --bs-tooltip-color: white;
+}
+
+#tooltip {
+    background-color: white;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 13px;
+  } 
+
+#escala_colores{
+    display: none;
+}
+
+
+/*UFH por color*/
+
+.uno_ufh{
+    background: #4E4B87;
+    color: white;
+    width: 7.69%;
+    text-align: center;
+}
+
+.dos_ufh{
+    background: #0C6097;
+    color: white;
+    width: 7.69%;
+    text-align: center;
+}
+
+.tres_ufh{
+    background: #2D95C0;
+    color: white;
+    width: 7.69%;
+    text-align: center;
+}
+
+.cuatro_ufh{
+    background: #99C1D4;
+    color: black;
+    width: 7.69%;
+    text-align: center;
+}
+
+.cinco_ufh{
+    background: #1A6B42;
+    color: white;
+    width: 7.69%;
+    text-align: center;
+}
+
+.seis_ufh{
+    background: #5CAA84;
+    color: white;
+    width: 7.69%;
+    text-align: center;
+}
+
+.siete_ufh{
+    background: #ADBA3E;
+    color: black;
+    width: 7.69%;
+    text-align: center;
+}
+
+.ocho_ufh{
+    background: #F6E5A9;
+    color: black;
+    width: 7.69%;
+    text-align: center;
+}
+
+.nueve_ufh{
+    background: #F1D674;
+    color: black;
+    width: 7.69%;
+    text-align: center;
+}
+
+.diez_ufh{
+    background: #FB8148;
+    color: white;
+    width: 7.69%;
+    text-align: center;
+}
+
+.once_ufh{
+    background: #FB77A9;
+    color: white;
+    width: 7.69%;
+    text-align: center;
+}
+
+.doce_ufh{
+    background: #8B4841;
+    color: white;
+    width: 7.69%;
+    text-align: center;
+}
+
+.trece_ufh{
+    background: #57524F;
+    color: white;
+    width: 7.69%;
+    text-align: center;
+}
+
+/*botones popup*/
+.btn{
+    
+    padding: 4px;
+    border-radius: 4px;
+}
+
+.cardName{
+    background-size:cover; 
+    height:150px;
+    display: flex;
+    align-items: flex-end;
+    padding: 16px;
+    position: relative;
+    border-radius: 8px;
+}
+
+.degrade{
+    background-image: linear-gradient(180deg, rgba(255, 0, 0, 0), rgba(0, 0, 0, 0.5));
+    height: 120px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 0;
+    border-radius: 8px;
+}
+
+.tituloPopup{
+    z-index: 1;
+}
+
+
+/*Clases ufh*/
+.ufh01{
+    background: #4E4B87;
+    font-size: 14px;
+    padding: 1px 4px;
+    color: white;
+}
+.ufh02{
+    background: #0C6097;
+    font-size: 14px;
+    padding: 1px 4px;
+    color: white;
+}
+.ufh03{
+    background: #2D95C0;
+    font-size: 14px;
+    padding: 1px 4px;
+    color: white;
+}
+.ufh04{
+    background: #99C1D4;
+    font-size: 14px;
+    padding: 1px 4px;
+}
+.ufh05{
+    background: #1A6B42;
+    font-size: 14px;
+    padding: 1px 4px;
+    color: white;
+}
+.ufh06{
+    background: #5CAA84;
+    font-size: 14px;
+    padding: 1px 4px;
+    color: white;
+}
+.ufh07{
+    background: #ADBA3E;
+    font-size: 14px;
+    padding: 1px 4px;
+}
+.ufh08{
+    background: #F6E5A9;
+    font-size: 14px;
+    padding: 1px 4px;
+}
+.ufh09{
+    background: #F1D674;
+    font-size: 14px;
+    padding: 1px 4px;
+}
+.ufh10{
+    background: #FB8148;
+    font-size: 14px;
+    padding: 1px 4px;
+    color: white;
+}
+.ufh11{
+    background: #FB77A9;
+    font-size: 14px;
+    padding: 1px 4px;
+    color: white;
+}
+.ufh12{
+    background: #8B4841;
+    font-size: 14px;
+    padding: 1px 4px;
+    color: white;
+}
+.ufh13{
+    background: #57524F;
+    font-size: 14px;
+    padding: 1px 4px;
+    color: white;
+}
+
+
+
+@media print {
+    body{
+        margin: 0;
+        width: 100%;
+        transform: scale(1);
+    }
+    /* Estilos de impresión personalizados */
+    .esri-search, .navbar-toggler, .filtromunicipios, .esri-zoom {
+      display: none; /* Oculta elementos con la clase 'no-print' */
+    }
+
+  }
+
+@media only screen and (max-width: 600px) {
+
+    .escala_UAF{
+        position: absolute;
+        z-index: 1;
+        height: 20px;
+        top: 83%;
+        left: 3%;
+        display: flex;
+        width: 94%;
+        font-size: 11px;
+    }
+
+    .filtromunicipios{
+        position: fixed;
+        top: 7%;
+        z-index: 1;
+        left: 3%;
+        width: 100%;
+        font-size: 12px;
+        padding: 4px;
+    
+    }
+
+
+    .logo{
+        width: 40px;
+        margin: auto;
+        display: flex;
+        position: absolute;
+        z-index: 1;
+        bottom: 5%;
+        left: 45%;
+    }
+}

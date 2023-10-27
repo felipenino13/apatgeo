@@ -1,0 +1,47 @@
+.bg-carrusel{
+    background-image: url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=2344&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    padding-top: 160px;
+    padding-bottom: 160px;
+}
+
+.destacado{
+    background-image: url("/img/bg-call-to-action.jpg");
+    background-size: cover;
+    padding-top: 160px;
+    padding-bottom: 160px;
+    padding-left: 80px;
+    padding-left: 80px;
+}
+
+footer{
+    background: black;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.formulario{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.profile{
+    background: none;
+    position: absolute;
+    z-index: 100;
+    right: 16px;
+    top: 0.8%;
+}
+
+.profile img{
+    border-radius: 80px;
+}
+
+.menu-dash{
+    position: absolute;
+    z-index: -1;
+}
+
+.dropdown-menu.show{
+    left: -92% !important;
+}
