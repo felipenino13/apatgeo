@@ -6,7 +6,7 @@
 }
 
 .destacado{
-    background-image: url("/img/bg-call-to-action.jpg");
+    background-image: url("https://raw.githubusercontent.com/felipenino13/apatgeo/main/img/bg-call-to-action.jpg");
     background-size: cover;
     padding-top: 160px;
     padding-bottom: 160px;
