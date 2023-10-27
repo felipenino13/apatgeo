@@ -20,6 +20,11 @@ footer{
     padding-bottom: 40px;
 }
 
+.boton-activo{
+    border-left: solid #198754 4px; 
+    background: #E8F3EE;
+}
+
 .formulario{
     padding-top: 80px;
     padding-bottom: 80px;

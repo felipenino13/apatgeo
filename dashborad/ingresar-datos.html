@@ -61,19 +61,19 @@
         <div class="row">
             <div class="col-2 px-0 bg-white shadow-sm" style="height: 92.2vh;">
                 <ul class="navbar-nav justify-content-end flex-grow-1 pt-5 px-0">
-                    <li class="nav-item py-2 ps-3 boton-activo">
-                        <a class="nav-link text-success" target="_self" aria-current="page" style="text-decoration: none;"><i class="fa-solid fa-solar-panel"></i><span class="mx-2">Dashborad</span></a>
+                    <li class="nav-item ps-3 py-2">
+                        <a class="nav-link" href="index.html" target="_self" aria-current="page"><i class="fa-solid fa-solar-panel"></i><span class="mx-2">Dashborad</span></a>
                     </li>
-                    <li class="nav-item py-2 ps-3">
+                    <li class="nav-item ps-3 py-2">
                         <a class="nav-link" href="../visorfull/index.html" target="_self" aria-current="page"><i class="fa-regular fa-map"></i><span class="mx-2">Visor geografico</span></a>
                     </li>
-                    <li class="nav-item py-2 ps-3">
-                        <a href="ingresar-datos.html" class="nav-link" target="_self" aria-current="page"><i class="fa-regular fa-square-plus"></i><span class="mx-2">Ingresar datos</span></a>
+                    <li class="nav-item ps-3 py-2 boton-activo">
+                        <a class="nav-link" target="_self" aria-current="page"><i class="fa-regular fa-square-plus"></i><span class="mx-2">Ingresar datos</span></a>
                     </li>
-                    <li class="nav-item py-2 ps-3">
+                    <li class="nav-item ps-3 py-2">
                         <a href="simulador-predios.html" class="nav-link" target="_self" aria-current="page"><i class="fa-solid fa-location-arrow"></i><span class="mx-2">Simulador predios</span></a>
                     </li>
-                    <li class="nav-item py-2 ps-3">
+                    <li class="nav-item ps-3 py-2">
                         <a href="metricas.html" class="nav-link" target="_self" aria-current="page"><i class="fa-solid fa-chart-line"></i><span class="mx-2">Metricas</span></a>
                     </li>
                     <!--
@@ -96,110 +96,62 @@
                 </ul>
             </div>
 
-            <div class="col-8 px-5 py-5">
-                <div class="row">
-                    <h1 class="display-5">Dashboard</h1>
-                </div>
-                <div class="row">
-                    <p>Ultimos municipios cargados</p>
+            <div class="col-10 px-5 py-5">
+                <div class="row pb-3">
+                    <h1 class="display-5">Datos municipios</h1>
                 </div>
                 <div class="row">
                     <div class="col-4">
                         <div class="card position-relative">
-                            <img src="../img/mun01.jpg" alt="">
                             <div class="px-4 py-3">
-                                <h5>Pradera</h5>
-                                <p>26 Ago 2023</p>
+                                <h5>Datos de campo</h5>
+                                <p>Ingresa en este formulario los datos del municipio</p>
+                                <form action="">
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Municipio</label>
+                                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Departamento</label>
+                                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="formFile" class="form-label">Lineas productivas</label>
+                                        <input class="form-control" type="file" id="formFile">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="formFile" class="form-label">Poligonos UFH</label>
+                                        <input class="form-control" type="file" id="formFile">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="formFile" class="form-label">Desarrollo productivo</label>
+                                        <input class="form-control" type="file" id="formFile">
+                                    </div>
+                                    <div class="row pt-3">
+                                        <div class="col-6">
+                                            <div class="col-auto text-center">
+                                                <a href="" style="text-decoration: none;">Guardar</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="col-auto">
+                                                <button type="submit" class="btn btn-primary mb-3  w-100">Enviar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </form>
                             </div>
                         </div>
                     </div>
-                    <div class="col-4">
-                        <div class="card">
-                            <img src="../img/mun02.jpg" alt="">
-                            <div class="px-4 py-3">
-                                <h5>Ayapel</h5>
-                                <p>10 Oct 2023</p>
-                            </div>
+                    <div class="col-8">
+                        <iframe src="../basemap/index.html" width="100%" height="100%" frameborder="0"></iframe>
                         </div>
                     </div>
-                    <div class="col-4">
-                        <div class="card">
-                            <img src="../img/mun03.jpg" alt="">
-                            <div class="px-4 py-3">
-                                <h5>Miramar</h5>
-                                <p>1 Nov 2023</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row pt-3">
-                    <h2 class="display-6 pb-2 pt-3">Proximos municipios</h2>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <table class="table table-striped">
-                            <thead>
-                              <tr>
-                                <th>Municipio</th>
-                                <th>Departamento</th>
-                                <th>Alistamiento</th>
-                                <th>Ingreso datos</th>
-                                <th>Procesamiento</th>
-                                <th>Publicación</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td>La Tebaida</td>
-                                <td>Quindío</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td><span class="badge text-bg-warning">En ajustes</span></td>
-                              </tr>
-                              <tr>
-                                <td>San Juan Nepomuceno</td>
-                                <td>Bolívar</td>
-                                <td><span class="badge text-bg-success">Hecho</span></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                              </tr>
-                              <tr>
-                                <td>El Copey</td>
-                                <td>Cesar</td>
-                                <td><span class="badge text-bg-primary">En proceso</span></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                              </tr>
-                              <tr>
-                                <td>Puerto Nariño</td>
-                                <td>Amazonas</td>
-                                <td></td>
-                                <td><span class="badge text-bg-danger">Detenido</span></td>
-                                <td></td>
-                                <td></td>
-                              </tr>
-                              <tr>
-                                <td>Susacón</td>
-                                <td>Boyacá</td>
-                                <td></td>
-                                <td></td>
-                                <td><span class="badge text-bg-success">Hecho</span></td>
-                                <td></td>
-                              </tr>
-                            </tbody>
-                          </table> 
-                    </div>
-                                       
                 </div>
             </div>
 
-            <div class="col-2">
-                
-            </div>
+            
             
         
         </div>
