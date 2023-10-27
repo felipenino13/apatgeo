@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 926.66 330.59">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #6c027b;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #e46c39;
+      }
+
+      .cls-5 {
+        fill: none;
+        stroke: #000;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        fill: #138dfe;
+      }
+
+      .cls-4 {
+        fill: #13249e;
+      }
+
+      .cls-6 {
+        font-family: MyriadPro-Regular, 'Myriad Pro';
+        font-size: 27.94px;
+      }
+    </style>
+  </defs>
+  <g id="Capa_1-2" data-name="Capa 1">
+    <g>
+      <g>
+        <g>
+          <text class="cls-6" transform="translate(0 323.61)"><tspan x="0" y="0">0</tspan></text>
+          <text class="cls-6" transform="translate(165.27 323.61)"><tspan x="0" y="0">100</tspan></text>
+          <text class="cls-6" transform="translate(344.87 323.61)"><tspan x="0" y="0">200</tspan></text>
+          <text class="cls-6" transform="translate(524.47 323.61)"><tspan x="0" y="0">300</tspan></text>
+          <text class="cls-6" transform="translate(704.07 323.61)"><tspan x="0" y="0">400</tspan></text>
+          <text class="cls-6" transform="translate(883.67 323.61)"><tspan x="0" y="0">500</tspan></text>
+        </g>
+        <line class="cls-5" x1="7.17" y1="298" x2="905.17" y2="298"/>
+        <g>
+          <line class="cls-5" x1="7.17" y1="298" x2="7.17" y2="290.55"/>
+          <line class="cls-5" x1="186.77" y1="298" x2="186.77" y2="290.55"/>
+          <line class="cls-5" x1="366.37" y1="298" x2="366.37" y2="290.55"/>
+          <line class="cls-5" x1="545.97" y1="298" x2="545.97" y2="290.55"/>
+          <line class="cls-5" x1="725.57" y1="298" x2="725.57" y2="290.55"/>
+          <line class="cls-5" x1="905.17" y1="298" x2="905.17" y2="290.55"/>
+        </g>
+      </g>
+      <g>
+        <line class="cls-5" x1="7.17" y1="298" x2="7.17"/>
+        <line class="cls-5" x1="7.17" y1="149" x2="29.62" y2="149"/>
+      </g>
+      <g>
+        <rect class="cls-1" x="7.17" y="211.58" width="89.8" height="53.64"/>
+        <rect class="cls-2" x="7.17" y="151.98" width="269.4" height="53.64"/>
+        <rect class="cls-4" x="7.17" y="92.38" width="359.2" height="53.64"/>
+        <rect class="cls-3" x="7.17" y="32.78" width="898" height="53.64"/>
+      </g>
+    </g>
+  </g>
+</svg>
